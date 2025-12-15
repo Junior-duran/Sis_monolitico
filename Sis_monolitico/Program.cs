@@ -1,3 +1,5 @@
+using Sis_monolitico.Views;
+
 namespace Sis_monolitico
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Sis_monolitico
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new FrmLogin());
         }
     }
 }

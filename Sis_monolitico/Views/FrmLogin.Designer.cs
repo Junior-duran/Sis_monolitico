@@ -96,7 +96,7 @@ namespace Sis_monolitico.Views
             pnlCard.Controls.Add(lblHint);
             pnlCard.CustomizableEdges = customizableEdges9;
             pnlCard.FillColor = Color.FromArgb(22, 22, 36);
-            pnlCard.Location = new Point(524, 44);
+            pnlCard.Location = new Point(276, 48);
             pnlCard.Name = "pnlCard";
             pnlCard.ShadowDecoration.BorderRadius = 18;
             pnlCard.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -199,6 +199,7 @@ namespace Sis_monolitico.Views
             btnLogin.Size = new Size(320, 48);
             btnLogin.TabIndex = 2;
             btnLogin.Text = "ENTRAR";
+            btnLogin.Click += btnLogin_Click;
             // 
             // lblHint
             // 

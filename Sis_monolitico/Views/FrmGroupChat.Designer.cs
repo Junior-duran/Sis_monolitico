@@ -21,8 +21,8 @@ namespace Sis_monolitico.Views
         private void InitializeComponent()
         {
             components = new Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,16 +37,12 @@ namespace Sis_monolitico.Views
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2BorderlessForm1 = new Guna2BorderlessForm(components);
             pnlMain = new Guna2Panel();
             pnlCenter = new Guna2Panel();
@@ -61,9 +57,7 @@ namespace Sis_monolitico.Views
             pnlTop = new Guna2Panel();
             lblRoom = new Label();
             txtRoomId = new Guna2TextBox();
-            btnConnect = new Guna2Button();
-            btnCall = new Guna2Button();
-            btnHang = new Guna2Button();
+            this.btnConnect = new Guna2Button();
             pnlMain.SuspendLayout();
             pnlCenter.SuspendLayout();
             pnlBottom.SuspendLayout();
@@ -85,12 +79,12 @@ namespace Sis_monolitico.Views
             pnlMain.Controls.Add(pnlRight);
             pnlMain.Controls.Add(pnlLeft);
             pnlMain.Controls.Add(pnlTop);
-            pnlMain.CustomizableEdges = customizableEdges25;
+            pnlMain.CustomizableEdges = customizableEdges21;
             pnlMain.Dock = DockStyle.Fill;
             pnlMain.FillColor = Color.FromArgb(12, 12, 22);
             pnlMain.Location = new Point(0, 0);
             pnlMain.Name = "pnlMain";
-            pnlMain.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            pnlMain.ShadowDecoration.CustomizableEdges = customizableEdges22;
             pnlMain.Size = new Size(1373, 700);
             pnlMain.TabIndex = 0;
             // 
@@ -214,15 +208,13 @@ namespace Sis_monolitico.Views
             // 
             pnlTop.Controls.Add(lblRoom);
             pnlTop.Controls.Add(txtRoomId);
-            pnlTop.Controls.Add(btnConnect);
-            pnlTop.Controls.Add(btnCall);
-            pnlTop.Controls.Add(btnHang);
-            pnlTop.CustomizableEdges = customizableEdges23;
+            pnlTop.Controls.Add(this.btnConnect);
+            pnlTop.CustomizableEdges = customizableEdges19;
             pnlTop.Dock = DockStyle.Top;
             pnlTop.FillColor = Color.FromArgb(18, 18, 32);
             pnlTop.Location = new Point(0, 0);
             pnlTop.Name = "pnlTop";
-            pnlTop.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            pnlTop.ShadowDecoration.CustomizableEdges = customizableEdges20;
             pnlTop.Size = new Size(1373, 70);
             pnlTop.TabIndex = 3;
             // 
@@ -252,44 +244,16 @@ namespace Sis_monolitico.Views
             // 
             // btnConnect
             // 
-            btnConnect.BorderRadius = 10;
-            btnConnect.CustomizableEdges = customizableEdges17;
-            btnConnect.Font = new Font("Segoe UI", 9F);
-            btnConnect.ForeColor = Color.White;
-            btnConnect.Location = new Point(275, 12);
-            btnConnect.Name = "btnConnect";
-            btnConnect.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnConnect.Size = new Size(90, 36);
-            btnConnect.TabIndex = 2;
-            btnConnect.Text = "Conectar";
-            // 
-            // btnCall
-            // 
-            btnCall.BorderRadius = 10;
-            btnCall.CustomizableEdges = customizableEdges19;
-            btnCall.FillColor = Color.FromArgb(80, 160, 255);
-            btnCall.Font = new Font("Segoe UI", 9F);
-            btnCall.ForeColor = Color.White;
-            btnCall.Location = new Point(389, 12);
-            btnCall.Name = "btnCall";
-            btnCall.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnCall.Size = new Size(90, 36);
-            btnCall.TabIndex = 3;
-            btnCall.Text = "Llamar";
-            // 
-            // btnHang
-            // 
-            btnHang.BorderRadius = 10;
-            btnHang.CustomizableEdges = customizableEdges21;
-            btnHang.FillColor = Color.FromArgb(200, 60, 60);
-            btnHang.Font = new Font("Segoe UI", 9F);
-            btnHang.ForeColor = Color.White;
-            btnHang.Location = new Point(508, 12);
-            btnHang.Name = "btnHang";
-            btnHang.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnHang.Size = new Size(90, 36);
-            btnHang.TabIndex = 4;
-            btnHang.Text = "Colgar";
+            this.btnConnect.BorderRadius = 10;
+            this.btnConnect.CustomizableEdges = customizableEdges17;
+            this.btnConnect.Font = new Font("Segoe UI", 9F);
+            this.btnConnect.ForeColor = Color.White;
+            this.btnConnect.Location = new Point(275, 12);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.btnConnect.Size = new Size(90, 36);
+            this.btnConnect.TabIndex = 2;
+            this.btnConnect.Text = "Conectar";
             // 
             // FrmGroupChat
             // 
@@ -317,7 +281,6 @@ namespace Sis_monolitico.Views
         private Label lblRoom;
 
         public Guna2TextBox txtRoomId;
-        public Guna2Button btnConnect, btnCall, btnHang;
 
         public ListBox lstRooms;
         public ListBox lstUsers;
