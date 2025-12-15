@@ -30,6 +30,12 @@ namespace Sis_monolitico.Views
             // Eventos WS
             _chatClient.UserJoined += OnUserJoined;
             _chatClient.TextMessageReceived += OnTextMessage;
+
+            btnNewInstance.Click += (_, _) =>
+            {
+                var f = new FrmGroupChat();
+                f.Show();
+            };
         }
 
         private async Task ConnectAsync()

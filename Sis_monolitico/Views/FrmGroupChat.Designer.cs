@@ -43,6 +43,11 @@ namespace Sis_monolitico.Views
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+
+            // ✅ Edges para el botón nuevo
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+
             guna2BorderlessForm1 = new Guna2BorderlessForm(components);
             pnlMain = new Guna2Panel();
             pnlCenter = new Guna2Panel();
@@ -58,6 +63,10 @@ namespace Sis_monolitico.Views
             lblRoom = new Label();
             txtRoomId = new Guna2TextBox();
             this.btnConnect = new Guna2Button();
+
+            // ✅ Botón nuevo
+            this.btnNewInstance = new Guna2Button();
+
             pnlMain.SuspendLayout();
             pnlCenter.SuspendLayout();
             pnlBottom.SuspendLayout();
@@ -209,6 +218,10 @@ namespace Sis_monolitico.Views
             pnlTop.Controls.Add(lblRoom);
             pnlTop.Controls.Add(txtRoomId);
             pnlTop.Controls.Add(this.btnConnect);
+
+            // ✅ Agregar el botón nuevo al top
+            pnlTop.Controls.Add(this.btnNewInstance);
+
             pnlTop.CustomizableEdges = customizableEdges19;
             pnlTop.Dock = DockStyle.Top;
             pnlTop.FillColor = Color.FromArgb(18, 18, 32);
@@ -254,6 +267,21 @@ namespace Sis_monolitico.Views
             this.btnConnect.Size = new Size(90, 36);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Conectar";
+
+            // 
+            // btnNewInstance
+            // 
+            this.btnNewInstance.BorderRadius = 10;
+            this.btnNewInstance.CustomizableEdges = customizableEdges23;
+            this.btnNewInstance.FillColor = Color.FromArgb(60, 180, 120);
+            this.btnNewInstance.Font = new Font("Segoe UI", 9F);
+            this.btnNewInstance.ForeColor = Color.White;
+            this.btnNewInstance.Location = new Point(380, 12);
+            this.btnNewInstance.Name = "btnNewInstance";
+            this.btnNewInstance.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.btnNewInstance.Size = new Size(140, 36);
+            this.btnNewInstance.TabIndex = 3;
+            this.btnNewInstance.Text = "Nueva ventana";
             // 
             // FrmGroupChat
             // 
@@ -288,5 +316,11 @@ namespace Sis_monolitico.Views
         public Guna2Panel pnlMessages;
         public Guna2TextBox txtMessage;
         public Guna2Button btnSend;
+
+        // ✅ FALTABAN estas declaraciones en tu Designer
+        public Guna2Button btnConnect;
+
+        // ✅ Botón nuevo
+        public Guna2Button btnNewInstance;
     }
 }
